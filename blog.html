@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <title>Important FAQ </title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav>
+        <div class=" navbar bg-slate-100 mx32 px-32 py-2">
+            <!-- home btn -->
+            <div class="navbar-start">
+                <button id="backBtn" class="btn btn-accent text-2xl font-bold mx-4">Home</button>
+            </div>
+                            <!-- logo section -->
+            <div class="navbar-center">
+              <div class="flex items-center justify-center gap-4">
+                <img src="assets/logo.png" alt="">
+                <h3 class="font-bold">Donate Bangladesh</h3>
+            </div>
+            </div>
+            <!-- coyen cection -->
+            <div class="navbar-end">
+              <div class="flex justify-center gap-3">
+                <img class="w-12 rounded-full" src="assets/USER-ICON.jpg" alt="">
+              </div>
+            </div>
+          </div>
+    </nav>
+
+    <main class="mx-32 mt-8">
+        <h1 class="flex text-5xl font-bold">Important FAQ <img class="w-12" src="question-mark.png" alt=""></h1>
+        <div class="mt-12">
+            <div class="collapse bg-base-200 border-solid border-2 border-gray-400 px-12 mt-2">
+                <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document object (DOM)?</div>
+                <div class="collapse-content">
+                  <p>Tree Structure: The DOM organizes a document as a hierarchical tree of nodes, with the document itself at the root. Nodes can be elements, attributes, text, etc.Example: html is the root element, with child nodes like head, body, etc. <br> The DOM is central to how modern web pages function, especially for building dynamic applications. It's one of the core concepts in web developmen</p>
+                </div>
+              </div>
+            <div class="collapse bg-base-200 border-solid border-2 border-gray-400 px-12 mt-2">
+                <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title text-xl font-medium">How do yor  selet on wlement from the dom?</div>
+                <div class="collapse-content">
+                  <p>To select an element from the DOM, you can use various methods provided by the document object in JavaScript. Here are the most common ways to select elements:
+
+                    1. getElementById()
+                    This method selects an element by its ID. Since IDs are unique in a document, this method will return only one element.</p>
+                </div>
+              </div>
+            <div class="collapse bg-base-200 border-solid border-2 border-gray-400 px-12 mt-2">
+                <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is useful?</div>
+                <div class="collapse-content">
+                  <p>Event delegation is a technique in the DOM where you attach a single event listener to a parent element rather than adding multiple listeners to individual child elements. The event listener on the parent element takes advantage of event bubbling to catch events fired by its child elements.
+
+                    How Event Delegation Works:
+                    When an event (like a click) is triggered on an element, it bubbles up through the DOM tree, from the target element (where the event occurred) to its ancestors. In event delegation, you use this bubbling process to catch events on child elements from a single listener on a parent element.
+                    
+                    Example:
+                    Instead of adding a click event listener to each button in a list, you can attach one listener to the parent container and determine which button was clicked using the event.target property.</p>
+                </div>
+              </div>
+            <div class="collapse bg-base-200 border-solid border-2 border-gray-400 px-12 mt-2">
+                <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title text-xl font-medium">How do yo monlpulate on element's athributes and styles using the dom?</div>
+                <div class="collapse-content">
+                  <p>To manipulate an element's attributes and styles using the DOM, you can utilize JavaScript methods and properties. Below are common ways to achieve this:
+
+                    1. Manipulating Attributes
+                    You can interact with an element’s attributes (like src, href, id, etc.) using specific methods and properties.
+                    
+                    getAttribute(): Gets the value of an attribute.
+                    setAttribute(): Sets or changes the value of an attribute.
+                    removeAttribute(): Removes an attribute from an element.</p>
+                </div>
+              </div>
+        </div>
+    </main>
+    
+    <script>
+    document.getElementById('backBtn').addEventListener('click', function(){
+        window.location.href ='index.html'
+    })
+    </script>
+</body>
+</html>

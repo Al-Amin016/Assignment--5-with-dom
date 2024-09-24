@@ -1,4 +1,5 @@
-
+const modal = document.getElementById('my_modal_1')
+console.log(modal);
 const doneteBtn = document.getElementsByClassName('donatebtn');
 for(let donete of doneteBtn){
     donete.addEventListener('click', function(e){
@@ -10,14 +11,24 @@ for(let donete of doneteBtn){
        
         document.getElementById('myAmount').innerText = myAmount - donetInput .toFixed(2);
 
-      
+      console.log('hwllo woard')
         if(donetInput > 0  || donetInput === Number){
             e.target.parentNode.parentNode.parentNode.childNodes[1].childNodes[3].innerText = donetBalance.toFixed(2);
         }
-        else alert('error')
-        return
+        else {
+            alert('error')
+            return
+        }
+        modal.showModal()
     })
+ 
 }
+
+
+const blogBtn = document.getElementById('blogBtn').addEventListener('click', function(){
+    window.location.href ='./blog.html'
+})
+
 
 
 
